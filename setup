@@ -33,7 +33,7 @@
 
 clear
 
-if [ `pveversion | grep "pve-manager/7" | wc -l` -ne 1 ]
+if [ `pveversion | grep "pve-manager/7" | wc -l` -ne 1 ] && [ `pveversion | grep "pve-manager/8" | wc -l` -ne 1 ]
 then
 	echo "This version of Proxmox Virtual Environment are not supported"
 	echo "Please, utilize version: 7.XX"
